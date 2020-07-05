@@ -3,7 +3,7 @@ import {Text,View,TouchableOpacity,TextInput,StyleSheet,KeyboardAvoidingView,Toa
 
 import * as firebase from 'firebase';
 import db from '../config';
-
+import {Header} from 'react-native-elements';
 
 export default class WriteScreen extends React.Component{
   
@@ -54,6 +54,13 @@ return(
   <KeyboardAvoidingView  style={styles.container} behavior="padding" enabled>
 
 <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Header 
+                    backgroundColor = {'pink'}
+                    centerComponent = {{
+                        text : 'Bed Time Stories',
+                        style : { color: 'white', fontSize: 20}
+                    }}
+                />
 <View>
 
 <TextInput
